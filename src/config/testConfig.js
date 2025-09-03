@@ -2,11 +2,11 @@ export const testConfig = {
     "quick-intro": {
         uuid: "quick-intro", // Invite ID
         testName: "UI/UX Designer", // Test Name
-        companyName: "Stratos",
+        companyName: "Ava Labs",
         roleName: "UI/UX Designer",
         questionCount: 3,
         testDurationInMinute: "20",// timeLimitInMinute + recordTimeInSeconds
-        companyURL: "https://www.thestratos.org/",
+        companyURL: "https://www.avalabs.org/",
         timeLimitInMinute: 15, //Time Limit of Quiz
         recordTimeInSeconds: 300, //Time Limit of Video Record 
         redirectURL: [
