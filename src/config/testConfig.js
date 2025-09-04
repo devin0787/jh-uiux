@@ -3,7 +3,7 @@ export const testConfig = {
         uuid: "quick-intro", // Invite ID
         testName: "UI/UX Designer", // Test Name
         companyName: "Ava Labs",
-        roleName: "UI/UX Designer",
+        roleName: "Designer",
         questionCount: 3,
         testDurationInMinute: "20",// timeLimitInMinute + recordTimeInSeconds
         companyURL: "https://www.avalabs.org/",
