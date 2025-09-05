@@ -369,9 +369,9 @@ export const VideoIntro = () => {
                                                     <div>Try launching the assessment in incognito mode or in a private window.</div> */}
                                                     <div>Ensure your camera drivers and web browser are up to date.</div>
                                                 </div>
-                                                <div className="mt-2 text-[#576871] font-semibold">
+                                                {/* <div className="mt-2 text-[#576871] font-semibold">
                                                     You can use your most fluent language, but <span className="text-[#b91c1c] font-bold">do not use Russian.</span>
-                                                </div>
+                                                </div> */}
                                                 <div className="w-full flex justify-center gap-[20px]">
                                                     <a className={"cursor-pointer bg-[#068932] text-white hover:text-[#068932] hover:bg-white font-bold px-[40px] py-[5px] h-[40px] border border-solid border-[2px] hover:border-[#068932]"} onClick={!(isActivated && cameraConnected) ? requestAccess : recordNow}>Record Now</a>
                                                     {/* <a className="disabled bg-[#034411] text-white font-bold px-[40px] py-[5px] h-[40px] border border-solid border-[2px]" onClick={recordNow}>
