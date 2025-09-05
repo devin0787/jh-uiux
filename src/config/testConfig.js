@@ -15,19 +15,19 @@ export const testConfig = {
             "/invite/quick-intro/iprep"
         ],
         responsibilities : [
-            "User-Centered Design: Design intuitive and visually compelling interfaces that enhance user trust and usability across web and mobile crypto products.",
+            "Design Excellence: Craft intuitive, elegant, and user-centric interfaces that foster trust and engagement across web and mobile crypto platforms.",
             "Wireframing & Prototyping: Create wireframes, user flows, and interactive prototypes using tools like Figma or Sketch.",
             "Crypto-Specific UX: Understand blockchain/crypto concepts and design experiences around wallets, transactions, gas fees, security prompts, and DApps.",
             "Accessibility & Performance: Ensure designs are responsive, accessible, and optimized for performance.",
         ],
         keyrequirements: [
-            "Experience: 2+ years in UI/UX design, preferably with fintech, crypto, or Web3 projects.",
-            "Tools: Proficient in design and prototyping tools (Figma, Sketch, Adobe XD, etc.).",
-            "Blockchain Awareness: Understanding of crypto interfaces—wallets, exchanges, NFTs, or DeFi products.",
+            "Experience: Minimum 2 years in UI/UX or Product Design, preferably with fintech, crypto, or Web3 projects.",
+            "Tools: Proficiency in design and prototyping platforms (Figma, Sketch, Adobe XD, etc.).",
+            "Domain Knowledge: Familiarity with blockchain interfaces—wallets, exchanges, NFTs, or DeFi applications.",
         ],
         questions: [
             [
-                "1. What tools did you use, and how did you validate your design decisions?"
+                "1. What design tools do you typically use, and how do you validate your design decisions through user feedback or data?"
             ],
             [
                 "2. Could you kindly provide your hourly rate, along with the corresponding currency?"
