@@ -1,9 +1,9 @@
 export const testConfig = {
     "quick-intro": {
         uuid: "quick-intro", // Invite ID
-        testName: "UI/UX Designer", // Test Name
+        testName: "UI/UX & Product Designer", // Test Name
         companyName: "Ava Labs",
-        roleName: "Designer",
+        roleName: "UI/UX & Product Designer",
         questionCount: 3,
         testDurationInMinute: "20",// timeLimitInMinute + recordTimeInSeconds
         companyURL: "https://www.avalabs.org/",
