@@ -33,8 +33,7 @@ export const testConfig = {
                 "2. Could you kindly provide your hourly rate, along with the corresponding currency?"
             ],
             [
-                "3. Please indicate your availability (including your timezone) for a 45-minute project explanation interview, should you advance past the video introduction stage.",
-                "-We will review your video introduction within 1-2 days. If satisfied, you will be invited to a 45-minute project explanation interview with our Project Manager and CTO."
+                "3. After completing this video introduction, when would you be available for a brief project discussion with our team? Please include your timezone."
             ],
         ],
     },
