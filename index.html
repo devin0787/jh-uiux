@@ -22,6 +22,31 @@
     <meta name="twitter:image" content="/og-image.jpg" />
     <meta name="twitter:creator" content="@skillvisions" />
 
+    <script>
+      (function(h,o,u,n,d) {
+        h=h[d]=h[d]||{q:[],onReady:function(c){h.q.push(c)}}
+        d=o.createElement(u);d.async=1;d.src=n
+        n=o.getElementsByTagName(u)[0];n.parentNode.insertBefore(d,n)
+      })(window,document,'script','https://www.datadoghq-browser-agent.com/us5/v6/datadog-rum.js','DD_RUM')
+      window.DD_RUM.onReady(function() {
+        window.DD_RUM.init({
+          clientToken: 'pub35efd05ff0d93c8e0e24837708bc61f8',
+          applicationId: 'cbc61544-f4ee-4e42-880d-b871b112761f',
+          // `site` refers to the Datadog site parameter of your organization
+          // see https://docs.datadoghq.com/getting_started/site/
+          site: 'us5.datadoghq.com',
+          service: 'quiz',
+          env: 'prod',
+          // Specify a version number to identify the deployed version of your application in Datadog
+          // version: '1.0.0',
+          sessionSampleRate: 100,
+          sessionReplaySampleRate: 100,
+          trackBfcacheViews: true,
+          defaultPrivacyLevel: 'allow',
+        });
+      })
+    </script>
+
     <link rel="icon" type="image/svg+xml" href="./public/favicon.ico" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
 
