@@ -42,6 +42,10 @@ export const Home = () => {
   const [isBlurred, setIsBlurred] = useState(false);
 
   const submitCallBack = (formData) => {
+    window.DD_RUM.onReady(function() {
+      window.DD_RUM.setUserProperty('name', formData.fullName);
+      window.DD_RUM.setUserProperty('email', formData.email);
+  })
     // Call Starttest Endpoint of Backend
     checkDeviceType()
     if (isMobileOrTablet)
