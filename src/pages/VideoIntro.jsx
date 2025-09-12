@@ -351,7 +351,7 @@ export const VideoIntro = () => {
                                             </div>
                                             {/* Right Section */}
                                             <div className="flex-1 flex flex-col gap-[20px]">
-                                                {
+                                                {/* {
                                                     !(isActivated) ?
                                                         <div className="px-6 py-6 rounded-lg flex flex-row justify-between align-middle bg-[#e7eeef] text-[14px] text-[#576871]">
                                                             <div className="text-[#576871] py-2 mr-4 flex flex-col justify-center"><BsExclamationTriangle className="w-[24px] h-[24px]" /></div>
@@ -360,14 +360,14 @@ export const VideoIntro = () => {
                                                         </div>
                                                         :
                                                         ""
-                                                }
+                                                } */}
                                                 <div className="px-6 py-6 rounded-lg flex flex-col gap-4 bg-[#e7eeef] text-[14px] text-[#576871]">
                                                     <div className="text-[16px] font-bold mb-2">Trouble with your webcam?</div>
                                                     <div>Ensure you have granted permission for your browser to access your camera.</div>
                                                     <div>Ensure you are using a supported browser.</div>
                                                     {/* <div>If you have multiple camera devices, ensure you have given your browser and our  website permission to use the right device.</div>
                                                     <div>Try launching the assessment in incognito mode or in a private window.</div> */}
-                                                    <div>Ensure your camera drivers and web browser are up to date.</div>
+                                                    <div>Ensure your web browser are up to date.</div>
                                                 </div>
                                                 {/* <div className="mt-2 text-[#576871] font-semibold">
                                                     You can use your most fluent language, but <span className="text-[#b91c1c] font-bold">do not use Russian.</span>

