@@ -53,7 +53,7 @@ const InviteRouter = () => {
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <App />
+    element: <Navigate to="/invite/quick-intro" />
   },
   {
     path: "/invite/:param*",
@@ -66,6 +66,10 @@ const router = createBrowserRouter([
   {
     path: "expired",
     element: <ExpiredPage />
+  },
+  {
+    path: "*",
+    element: <Navigate to="/invite/quick-intro" />
   }
 ]);
 

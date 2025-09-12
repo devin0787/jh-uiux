@@ -13,6 +13,7 @@ export const getRedirectURL = (uuid, pageID) => {
 
 
 export const getTestUUIDByURI = (uri) => {
+    return "quick-intro";
     const data = uri.split("/");
 
     if (data.length <= 3) {
